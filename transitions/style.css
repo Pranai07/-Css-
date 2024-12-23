@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.a,.f{
+  padding: 10px;
+}
+body{
+  margin: 20px;
+}
+
+.container-2{
+  margin: 100px;
+  width: 300px;
+  height: 300px;
+  border: 2px solid black;
+  transition: 0.5s ease;
+  background-color: lightblue;
+}
+.trans:active~.container-2{
+  transform: translate(50px, 50px);
+}
+.scale:active~.container-2{
+  transform: scale(1.2);
+}
+.rotate:active~.container-2{
+  transform: rotate(360deg);
+}
+.skew:active~.container-2{
+  transform: skew(20deg);
+}
+.fan{
+  text-align: center;
+}
+.faan{
+  margin: 30px;
+  transition: 0.4s ease;
+}

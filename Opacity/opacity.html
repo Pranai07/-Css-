@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Basic Opacity</h1>
+  <style>
+    .opaque {
+      opacity: 1;
+    }
+
+    .semi-transparent {
+      opacity: 0.5;
+    }
+
+    .transparent {
+      opacity: 0;
+    }
+    
+  </style>
+  <div class="opaque">This is fully opaque.</div>
+  <div class="semi-transparent">This is semi-transparent.</div>
+  <div class="transparent">This is completely transparent.</div>
+
+
+
+
+ 
+  <h1>Opacity with background color</h1>
+  <style>
+    .box {
+      width: 200px;
+      height: 100px;
+      background-color: blue;
+      margin-bottom: 10px;
+    }
+
+    .opaque {
+      opacity: 1;
+    }
+
+    .semi-transparent {
+      opacity: 0.5;
+    }
+
+    .transparent {
+      opacity: 0.2;
+    }
+  </style>
+  <div class="box opaque">Opaque Box</div>
+  <div class="box semi-transparent">Semi-Transparent Box</div>
+  <div class="box transparent">Transparent Box</div>
+
+
+
+  <h1>Opacity and Nested Elements</h1>
+  <style>
+    .parent {
+      width: 200px;
+      height: 100px;
+      background-color: green;
+      opacity: 0.5;
+    }
+
+    .child {
+      width: 100px;
+      height: 50px;
+      background-color: red;
+    }
+  </style>
+  <div class="parent">
+    Parent Element
+    <div class="child">Child Element</div>
+  </div>
+
+
+  <h1>Hover effect with Opacity</h1>
+  <style>
+    .hover-box {
+      width: 200px;
+      height: 100px;
+      background-color: purple;
+      transition: opacity 1s;
+    }
+
+    .hover-box:hover {
+      opacity: 0.7;
+    }
+  </style>
+  <div class="hover-box">Hover over me!</div>
+
+
+
+  <h1>Opacity with multiple transitions</h1>
+  <style>
+    .box {
+      width: 200px;
+      height: 100px;
+      background-color: red;
+      opacity: 1;
+      transform: scale(1);
+      transition: opacity 1s, transform 1s;
+    }
+
+    .box:hover {
+      opacity: 0.3;
+      transform: scale(1.5);
+    }
+  </style>
+  <div class="box">Hover to see combined effects!</div>
+
+
+  
+  <h1>Keyframes for animations</h1>
+  <style>
+    .fade-animation {
+      width: 200px;
+      height: 100px;
+      background-color: green;
+      animation: fadeEffect 0.3s infinite;
+    }
+
+    @keyframes fadeEffect {
+      0% {
+        opacity: 0;
+      }
+
+      50% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+  </style>
+  <div class="fade-animation">Watch me fade in and out!</div>
+
+
+
+  <h1>Using @keyframes for Sequential/complex Animation</h1>
+  <style>
+    .complex-animation {
+      width: 200px;
+      height: 100px;
+      background-color: red;
+      animation: complexFade 1s infinite;
+    }
+
+    @keyframes complexFade {
+      0% {
+        opacity: 0;
+      }
+
+      25% {
+        opacity: 0.5;
+      }
+
+      50% {
+        opacity: 1;
+      }
+
+      75% {
+        opacity: 0.5;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+  </style>
+  <div class="complex-animation">Complex fade effect!</div>
+
+
+
+  <h1>Applying animations to multiple items</h1>
+  <style>
+    .fade-elements {
+      width: 150px;
+      height: 75px;
+      margin: 10px;
+      background-color: orange;
+      animation: fadeInOut 4s infinite;
+    }
+
+    @keyframes fadeInOut {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+  <div class="fade-elements">Element 1</div>
+  <div class="fade-elements">Element 2</div>
+  <div class="fade-elements">Element 3</div> -->
+
+</body>
+
+</html>
